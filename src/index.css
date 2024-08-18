@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.tab {
+  background: rgba(86, 86, 86, 0.85);
+  -webkit-backdrop-filter: blur(45px);
+  backdrop-filter: blur(45px);
+  border: 1px solid rgba(86, 86, 86, 0.425);
+}
+main {
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  background-image: linear-gradient(32deg, rgba(8, 8, 8, 0.74) 30px, transparent);
+  background-size: 60px 60px;
+  background-position: -5px -5px;
+}
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes spins {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.animate-spins {
+  animation: spins 5s linear infinite;
+  -webkit-animation: spins 5s linear infinite;
+}
+header a {
+  @apply px-3 py-1 text-black bg-white rounded-lg h-fit hover:bg-slate-500 hover:text-white;
+}
+/* Skill page */
+.Skill {
+  @apply flex flex-wrap gap-5 justify-center capitalize;
+}
+.Skill div {
+  @apply flex flex-col gap-4 justify-center items-center py-2 w-32 rounded-lg transition-all duration-300;
+}
+.Skill div:nth-child(1) {
+  @apply hover:bg-orange-400 hover:drop-shadow-[0px_0px_2px_orange];
+}
+.Skill div:nth-child(2) {
+  @apply hover:bg-blue-700 hover:drop-shadow-[0px_0px_2px_blue];
+}
+.Skill div:nth-child(3) {
+  @apply hover:bg-red-600 hover:drop-shadow-[0px_0px_2px_red];
+}
+.Skill div:nth-child(4) {
+  @apply hover:bg-blue-400 hover:drop-shadow-[0px_0px_2px_blue];
+}
+.Skill div:nth-child(5) {
+  @apply hover:bg-yellow-400 hover:drop-shadow-[0px_0px_2px_yellow];
+}
+
+.Skill div:nth-child(6) {
+  @apply hover:bg-blue-600 hover:drop-shadow-[0px_0px_2px_blue];
+}
+.Skill div:nth-child(7) {
+  @apply hover:bg-blue-400 hover:drop-shadow-[0px_0px_2px_blue];
+}
+.Skill div:nth-child(8) {
+  @apply hover:bg-purple-600 hover:drop-shadow-[0px_0px_2px_purple];
+}
+.Skill div:nth-child(9) {
+  @apply hover:bg-blue-800 hover:drop-shadow-[0px_0px_2px_blue];
+}
+.Skill div:nth-child(10) {
+  @apply hover:bg-blue-800 hover:drop-shadow-[0px_0px_2px_blue];
+}
+.Skill div img {
+  @apply w-16 h-16;
+}
+/*about and hero*/
+/* .article p span,
+.Skills h3 span,
+.project h3 span {
+  @apply hover:drop-shadow-[0px_-2px_6px_rgba(251,146,60,1)] transition-all duration-300 hover:text-orange-400;
+} */
+
+.hoverMe {
+  @apply hover:drop-shadow-[0px_0px_2px_rgba(251,146,60,1)] transition-all duration-300 hover:text-orange-400;
+}
+.article {
+  @apply flex flex-col md:gap-20;
+}
+.spinner {
+  width: 32px;
+  height: 32px;
+  animation: spinner-y0fdc1 2.8s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  background-color: rgba(178, 179, 209, 0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 1.6px solid #b2b3d1;
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-16px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(16px);
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
