@@ -42,7 +42,7 @@ header a {
   @apply flex flex-wrap gap-5 justify-center capitalize;
 }
 .Skill div {
-  @apply flex flex-col gap-4 justify-center items-center py-2 w-32 rounded-lg transition-all duration-300;
+  @apply flex flex-col gap-4 justify-center items-center py-2 w-32 rounded-lg transition-all duration-300 hover:animate-bounce;
 }
 .Skill div:nth-child(1) {
   @apply hover:bg-orange-400 hover:drop-shadow-[0px_0px_2px_orange];

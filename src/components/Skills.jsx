@@ -1,7 +1,8 @@
+import "animate.css";
 const Skills = () => {
   return (
     <div className="flex flex-col gap-20 justify-center h-full animate__animated animate__fadeInDown Skills">
-      <h3 className="text-4xl font-bold cursor-default md:text-5xl">
+      <p className="text-4xl font-bold cursor-default md:text-5xl">
         <span>M</span>
         <span>y </span>
         <span>S</span>
@@ -10,12 +11,12 @@ const Skills = () => {
         <span>l</span>
         <span>l</span>
         <span>s</span>
-      </h3>
+      </p>
       <div className="text-xl font-normal Skill">
-        <div>
+        <div className="">
           {" "}
           <img src={require("../assets/Html.svg").default} alt="" />
-          <p>HTML</p>
+          <p className="hover:animate__jello hover:animate__animated">HTML</p>
         </div>
         <div>
           {" "}

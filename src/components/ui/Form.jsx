@@ -13,8 +13,8 @@ const Forms = () => {
             <label htmlFor="Subject">Subject</label>
             <input
               required
-              name="email"
-              id="email"
+              name="Subject"
+              id="Subject"
               onChange={(e) => setSubject(e.target.value)}
               value={subject}
               type="text"
