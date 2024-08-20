@@ -17,12 +17,12 @@ const Cover = memo(() => {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="py-4 mt-8 text-4xl font-medium tracking-tight text-center text-transparent bg-clip-text bg-gradient-to-br from-slate-300 to-slate-500 md:text-7xl"
+          className="flex flex-col gap-5 items-center py-4 mt-8 text-4xl font-medium tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-slate-300 to-slate-500 md:text-7xl"
         >
           <p className={cn("relative z-20 text-3xl text-white md:text-5xl")}>
             Front-End Software Developer{" "}
           </p>
-          <p className="relative z-20 mt-2 text-2xl text-center text-neutral-300">
+          <p className="relative z-20 mt-2 w-1/2 text-2xl leading-10 text-center text-neutral-300">
             Resolving design problems, building smart user interfaces and useful interactions,
             developing rich web applications and seamless web experiences.
           </p>

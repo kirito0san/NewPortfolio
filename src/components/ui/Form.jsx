@@ -1,46 +1,64 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styled from "styled-components";
 
 const Forms = () => {
   const [subject, setSubject] = useState(``);
   const [massege, setMassege] = useState(``);
 
+  const buttonRef = useRef(null);
+
+  const handleMouseMove = (e) => {
+    if (buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      buttonRef.current.style.setProperty("--x", `${x}px`);
+      buttonRef.current.style.setProperty("--y", `${y}px`);
+    }
+  };
+
   return (
     <StyledWrapper>
-      <div className="form-container">
-        <form className="form">
-          <div className="form-group">
-            <label htmlFor="Subject">Subject</label>
-            <input
-              required
-              name="Subject"
-              id="Subject"
-              onChange={(e) => setSubject(e.target.value)}
-              value={subject}
-              type="text"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="textarea">How Can i Help You?</label>
-            <textarea
-              required
-              cols={50}
-              onChange={(e) => setMassege(e.target.value)}
-              rows={10}
-              id="textarea"
-              value={massege}
-              name="textarea"
+      <div className="rounded-2xl shadow">
+        <div
+          className="form-container mouse-cursor-gradient-tracking"
+          onMouseMove={handleMouseMove}
+          ref={buttonRef}
+        >
+          <form className="z-20 form">
+            <div className="form-group">
+              <label htmlFor="Subject">Subject</label>
+              <input
+                required
+                name="Subject"
+                id="Subject"
+                onChange={(e) => setSubject(e.target.value)}
+                value={subject}
+                type="text"
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="textarea">How Can i Help You?</label>
+              <textarea
+                required
+                cols={50}
+                onChange={(e) => setMassege(e.target.value)}
+                rows={10}
+                id="textarea"
+                value={massege}
+                name="textarea"
+              >
+                {" "}
+              </textarea>
+            </div>
+            <a
+              className="z-20 form-submit-btn"
+              href={`mailto:jodat.ahmedsyed@gmail.com?subject=${subject}&body=${massege}`}
             >
-              {" "}
-            </textarea>
-          </div>
-          <a
-            className="form-submit-btn"
-            href={`mailto:jodat.ahmedsyed@gmail.com?subject=${subject}&body=${massege}`}
-          >
-            Send Email
-          </a>
-        </form>
+              Send Email
+            </a>
+          </form>
+        </div>
       </div>
     </StyledWrapper>
   );

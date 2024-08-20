@@ -1,42 +1,42 @@
 const About = () => {
   return (
-    <div
-      id="about"
-      className="flex flex-col justify-center w-full h-full animate__animated animate__fadeInDown about"
-    >
+    <div className="flex flex-col justify-center w-full h-full about animate__animated animate__fadeInDown">
       <div className="flex flex-col">
-        <div className="text-4xl font-bold cursor-default article md:text-5xl">
-          <p>Hi ,I am Ahmed Syed Web Developer</p>
+        <div className="text-4xl font-bold cursor-default card article md:text-5xl">
+          <div className="flex flex-col gap-4">
+            <p>Ahmed Syed</p>
+            <p>Front End Developer</p>
+          </div>
           <div className="text-xl font-normal capitalize aboutParagraph">
             <p className="px-5 pt-5 font-light">
-              I’m from egypt, My journey with FWD started as the gateway into the world of
-              programming. Upon completing the introductory stage, I began searching for other
-              resources to deepen my knowledge in the field. Along the way, I stumbled upon a
-              valuable treasure, which was found on YouTube under the name
+              I’m Ahmed Syed, a dedicated Front End Developer based in Egypt. My programming journey
+              began with FWD, which provided a solid foundation and sparked my passion for
+              development. As I progressed, I sought out additional resources to broaden my
+              knowledge. A pivotal moment was discovering{" "}
               <a
                 rel="noreferrer"
                 className="font-semibold hoverMe"
                 target="_blank"
                 href="https://www.youtube.com/@ElzeroWebSchool"
               >
-                {" "}
-                Elzero Web School{" "}
-              </a>
-              . Professor
+                Elzero Web School
+              </a>{" "}
+              and learning from Professor{" "}
               <a
                 rel="noreferrer"
                 className="font-semibold hoverMe"
                 target="_blank"
                 href="https://www.facebook.com/OsElzero"
               >
-                {" "}
-                Osama Mohamed{" "}
+                Osama Mohamed
               </a>
-              was a major catalyst for me to fall in love with web design and development. And now,
-              I am part of the DEPI scholarship to further develop my technical skills. This
-              opportunity has allowed me to deepen my knowledge, refine my abilities, and stay
-              up-to-date with the latest trends and technologies in web development. My goal is to
-              continue growing as a developer and contribute effectively to the tech community
+              , whose insights significantly influenced my approach to web design and development.
+              Currently, I am part of the DEPI scholarship program, where I am enhancing my
+              technical skills and staying updated with the latest trends and technologies. I
+              specialize in creating responsive and visually engaging web applications using modern
+              tools and frameworks. My objective is to continue growing as a developer, contribute
+              to innovative projects, and engage with the tech community. Feel free to explore my
+              work or get in touch for potential collaborations.
             </p>
           </div>
         </div>

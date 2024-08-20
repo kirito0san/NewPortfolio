@@ -1,7 +1,7 @@
 import "animate.css";
 const Skills = () => {
   return (
-    <div className="flex flex-col gap-20 justify-center h-full animate__animated animate__fadeInDown Skills">
+    <div className="flex flex-col gap-20 justify-center h-full section-Imgs animate__animated animate__fadeInDown">
       <p className="text-4xl font-bold cursor-default md:text-5xl">
         <span>M</span>
         <span>y </span>

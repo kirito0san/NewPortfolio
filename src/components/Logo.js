@@ -1,8 +1,8 @@
 const Logo = () => {
   return (
-    <div className="  ">
+    <div className="absolute right-0 bottom-4 z-10 md:z-0 md:top-4 md:left-5">
       <svg
-        className=" animate-spins"
+        className="animate-spins"
         xmlns="http://www.w3.org/2000/svg"
         width="50"
         height="50"
@@ -14,7 +14,7 @@ const Logo = () => {
           <path
             style={{
               opacity: 1,
-              fill: '#f96d00',
+              fill: '#7983ff',
               fillOpacity: 1,
               stroke: 'none',
               strokeWidth: 2,
