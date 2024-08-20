@@ -59,7 +59,7 @@ const Tooltip = () => {
             <img
               className="z-10 rounded-full border grayscale"
               src={require("../../assets/favicon-32x32.png")}
-              alt=""
+              alt="FrontendMentor"
             />
           </a>
           <div className="tooltip">Frontend Mentor</div>

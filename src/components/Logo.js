@@ -5,7 +5,7 @@ const Logo = () => {
         className="animate-spins"
         xmlns="http://www.w3.org/2000/svg"
         width="50"
-        height="50"
+        height="65"
         viewBox="0 0 30 30"
         version="1.1"
         id="svg822"

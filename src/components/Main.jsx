@@ -16,7 +16,7 @@ function Main() {
         title: "Home",
         value: "Home",
         content: (
-          <div className="overflow-auto  relative w-full  h-[calc(100vh-15vh)] tab  text-xl font-bold text-white rounded-2xl md:text-4xl">
+          <div className="overflow-auto relative w-full text-xl font-bold text-white rounded-2xl cover tab md:text-4xl">
             <Cover />
           </div>
         ),
@@ -25,7 +25,7 @@ function Main() {
         title: "Skills",
         value: "Skills",
         content: (
-          <div className="overflow-auto Skills  h-[calc(100vh-15vh)]  relative w-full text-xl font-bold text-white rounded-2xl tab md:text-4xl">
+          <div className="overflow-auto relative w-full text-xl font-bold text-white rounded-2xl Skills tab md:text-4xl">
             <Skills />
           </div>
         ),

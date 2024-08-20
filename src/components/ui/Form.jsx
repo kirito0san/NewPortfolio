@@ -19,7 +19,7 @@ const Forms = () => {
 
   return (
     <StyledWrapper>
-      <div className="rounded-2xl shadow">
+      <div className="rounded-2xl w-[300px] sm:w-auto shadow">
         <div
           className="form-container mouse-cursor-gradient-tracking"
           onMouseMove={handleMouseMove}

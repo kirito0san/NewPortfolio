@@ -1,14 +1,14 @@
 const About = () => {
   return (
-    <div className="flex flex-col justify-center w-full h-full about animate__animated animate__fadeInDown">
+    <div className="flex flex-col min-h-[calc(100vh-15vh)] text-start sm:text-center justify-center  about animate__animated animate__fadeInDown">
       <div className="flex flex-col">
         <div className="text-4xl font-bold cursor-default card article md:text-5xl">
           <div className="flex flex-col gap-4">
             <p>Ahmed Syed</p>
             <p>Front End Developer</p>
           </div>
-          <div className="text-xl font-normal capitalize aboutParagraph">
-            <p className="px-5 pt-5 font-light">
+          <div className="text-xs font-normal capitalize sm:text-xl">
+            <p className="pt-5 font-light sm:px-5">
               I’m Ahmed Syed, a dedicated Front End Developer based in Egypt. My programming journey
               began with FWD, which provided a solid foundation and sparked my passion for
               development. As I progressed, I sought out additional resources to broaden my

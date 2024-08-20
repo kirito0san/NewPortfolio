@@ -1,12 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.cover {
+  @apply min-h-[calc(100vh-15vh)];
+}
 .Skills {
-  @apply object-cover bg-center bg-cover bg-[url('./assets/wallpaperflare.com_wallpaper.webp')];
+  @apply flex py-5 flex-col justify-center min-h-[calc(100vh-15vh)] object-cover bg-center bg-cover bg-[url('./assets/wallpaperflare.com_wallpaper.webp')];
 }
 .about {
-  @apply object-cover bg-center bg-cover bg-[url('./assets/wallpaperflare.com_wallpaper(9).webp')];
+  @apply py-5 object-cover bg-center bg-cover bg-[url('./assets/wallpaperflare.com_wallpaper(9).webp')];
 }
 .project {
   @apply min-h-[calc(100vh-15vh)] object-cover bg-center bg-contain bg-[url('./assets/wallpaperflare.com_wallpaper(8).webp')];

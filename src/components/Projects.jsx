@@ -35,7 +35,7 @@ function Projects() {
                 <CardItem translateZ="100" rotateX={0} rotateZ={0} className="mt-4 w-full">
                   <img
                     src={item.preview}
-                    className="object-contain w-full rounded-xl md:h-60 md:object-cover w- group-hover/card:shadow-xl"
+                    className="object-cover w-full rounded-xl  md:h-60 w- group-hover/card:shadow-xl"
                     alt="thumbnail"
                   />
                 </CardItem>
