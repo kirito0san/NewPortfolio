@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 .cover {
-  @apply min-h-[calc(100vh-15vh)];
+  @apply min-h-[calc(100vh-40px-98px)];
 }
 .Skills {
-  @apply flex py-5 flex-col justify-center min-h-[calc(100vh-15vh)] object-cover bg-center bg-cover bg-[url('./assets/wallpaperflare.com_wallpaper.webp')];
+  @apply flex py-5 flex-col justify-center min-h-[calc(100vh-40px-98px)] object-cover bg-center bg-cover bg-[url('./assets/wallpaperflare.com_wallpaper.webp')];
 }
 .about {
   @apply py-5 object-cover bg-center bg-cover bg-[url('./assets/wallpaperflare.com_wallpaper(9).webp')];
 }
 .project {
-  @apply min-h-[calc(100vh-15vh)] object-cover bg-center bg-contain bg-[url('./assets/wallpaperflare.com_wallpaper(8).webp')];
+  @apply min-h-[calc(100vh-40px-98px)] object-cover bg-center bg-contain bg-[url('./assets/wallpaperflare.com_wallpaper(8).webp')];
 }
 .contact-me {
-  @apply min-h-[calc(100vh-15vh)]  object-cover bg-black bg-center bg-cover;
+  @apply min-h-[calc(100vh-40px-98px)]  object-cover bg-black bg-center bg-cover;
 }
 /* ButtonWithCursorEffect.css */
 .mouse-cursor-gradient-tracking {

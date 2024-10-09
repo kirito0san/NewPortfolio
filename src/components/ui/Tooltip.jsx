@@ -6,7 +6,7 @@ import WhatsApp from "../../assets/WhatsApp";
 
 const Tooltip = () => {
   return (
-    <StyledWrapper>
+    <StyledWrapper className="">
       <ul className="example-2">
         <li className="icon-content">
           <a

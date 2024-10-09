@@ -16,7 +16,7 @@ function Main() {
         title: "Home",
         value: "Home",
         content: (
-          <div className="overflow-auto relative w-full text-xl font-bold text-white rounded-2xl cover tab md:text-4xl">
+          <div className="overflow-hidden relative w-full text-xl font-bold text-white rounded-2xl cover tab md:text-4xl">
             <Cover />
           </div>
         ),
@@ -64,16 +64,15 @@ function Main() {
   return (
     <main className="flex relative gap-5 pt-5 w-full h-screen min-h-screen">
       <Button setContact={setContact} contact={contact} />
-      <Logo />
       <aside
         className={
-          "bg-white  flex flex-col gap-10 items-center  md:static fixed top-[50%] -translate-y-1/2 z-50 rounded-lg w-[50px] my-auto h-fit transition-all " +
+          " bg-white rounded-lg flex flex-col  gap-10 items-center md:static fixed top-[50%] -translate-y-1/2 z-50  w-[50px] my-auto h-fit transition-all " +
           (contact ? `left-0` : `-left-20`)
         }
       >
         <Tooltip />
       </aside>
-      <div className="text-center  overflow-hidden  h-[calc(100vh-50px)]  [perspective:1000px] relative b flex flex-col w-[90%] items-start justify-start ">
+      <div className="text-center  overflow-hidden   [perspective:1000px] relative b flex flex-col w-[90%] mx-auto items-start justify-start ">
         <Tabs tabs={tabs} />
       </div>
     </main>
