@@ -7,7 +7,7 @@ const About = () => {
             <p>Ahmed Syed</p>
             <p>Front End Developer</p>
           </div>
-          <div className="text-xs font-normal capitalize sm:text-xl">
+          <div className="text-xs font-normal sm:text-xl">
             <p className="pt-5 font-light sm:px-5">
               I’m Ahmed Syed, a dedicated Front End Developer based in Egypt. My programming journey
               began with FWD, which provided a solid foundation and sparked my passion for

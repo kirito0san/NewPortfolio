@@ -27,7 +27,7 @@ function Projects() {
               <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                 <CardItem
                   translateZ="50"
-                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                  className="text-xl font-bold capitalize text-neutral-600 dark:text-white"
                 >
                   {item.name}
                 </CardItem>
@@ -35,7 +35,7 @@ function Projects() {
                 <CardItem translateZ="100" rotateX={0} rotateZ={0} className="mt-4 w-full">
                   <img
                     src={item.preview}
-                    className="object-cover w-full rounded-xl  md:h-60 w- group-hover/card:shadow-xl"
+                    className="object-cover w-full rounded-xl md:h-60 w- group-hover/card:shadow-xl"
                     alt="thumbnail"
                   />
                 </CardItem>

@@ -38,7 +38,7 @@ const Forms = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="textarea">How Can i Help You?</label>
+              <label htmlFor="textarea">How Can I Help You?</label>
               <textarea
                 required
                 cols={50}

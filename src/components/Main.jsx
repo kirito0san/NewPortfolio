@@ -8,7 +8,6 @@ import "animate.css";
 import ContactMe from "./ContactMe";
 import Tooltip from "./ui/Tooltip";
 import Button from "./ui/BtnShare";
-import Logo from "./Logo";
 function Main() {
   const tabs = useMemo(() => {
     const tab = [
@@ -49,8 +48,8 @@ function Main() {
         ),
       },
       {
-        title: "ContactMe",
-        value: "ContactMe",
+        title: "Call To Action",
+        value: "Call To Action",
         content: (
           <div className="overflow-hidden relative w-full text-xl font-bold text-white rounded-2xl tab md:text-4xl">
             <ContactMe />
